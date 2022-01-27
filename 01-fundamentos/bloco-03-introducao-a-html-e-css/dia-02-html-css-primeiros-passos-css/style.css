@@ -1,0 +1,37 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+ul {
+    background-color: azure;
+    line-height: 40px;
+}
+
+.cordefundo {
+    background-color: aqua;
+}
+
+p {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+body {
+    font-size: 16px;
+    font-style: oblique;
+    text-decoration: wavy;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#amarelo {
+    background-color: yellow;
+}
+
+#marrom {
+    background-color: brown;
+}
