@@ -5,9 +5,9 @@ let grossSalary = 3000.00;
 
 if (grossSalary <= 1556.94) {
     aliquotINSS = grossSalary*0.08;
-} else if (grossSalary >= 1556.95 && grossSalary <= 2594.92) {
+} else if (grossSalary <= 2594.92) {
     aliquotINSS = grossSalary*0.09;
-} else if (grossSalary >=2594.93 && grossSalary <= 5189.82) {
+} else if (grossSalary <= 5189.82) {
     aliquotINSS = grossSalary*0.11;
 } else {
     aliquotINSS = grossSalary - 570,88;
@@ -29,6 +29,6 @@ if (base <= 1903.98){
     aliquotIR = (base * 0.275) - 869.36;
 };
 
+let liquidSalary = base - aliquotIR;
 
-
-console.log (`liquidSalary: ` +(base - aliquotIR));
+console.log (liquidSalary);
