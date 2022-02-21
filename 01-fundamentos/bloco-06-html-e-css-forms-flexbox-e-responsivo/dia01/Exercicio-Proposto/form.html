@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Trybe Trip</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Trybe Trip</h1>
+        </center>
+    </header>
+    <main>
+        <center><section id="caixa-formulario">
+            <form>
+            <div class="line-content">
+                <label for="NomeUsuario">Nome: </label>
+                <input type="text" name="Nome" id="NomeUsuario" maxlength="40" minlength="10">
+            </div>
+            <div class="line-content">
+                <label for="emailUsuario">Email: </label>
+                <input type="email" name="Email" id="emailUsuario">
+            </div>
+            <div class="line-content" id="destino">
+                <input type="radio" name="city" id="d-city">
+                <label for="d-city">Cidade </label>
+                <input type="radio" name="campo" id="d-campo">
+                <label for="d-campo">Campo</label>
+                <input type="radio" name="praia" id="d-beach">
+                <label for="d-beach">Praia</label>
+                <input type="radio" name="mountain" id="d-mountain">
+                <label for="d-mountain">Montanha</label>
+            </div>
+            <div class="line-content">
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea name="justificativa" id="justify" maxlength="500" rows="10" cols="50" placeholder="justifique sua resposta"></textarea>
+            </div>
+            <div class='line-content'>
+                <label for="dataDaViagem">Data: </label>
+                <input type="date" name="data" id="dataDaViagem" placeholder="dd/mm/yy">
+            </div>
+            <div class="line-content">
+                <input type="checkbox" name="opt1" id="opt1">
+                <label for="opt1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            </div>
+            <div class = "line-content">
+                <input type="checkbox" name="opt2" id="opt2">
+                <label for="opt2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            </div>
+            <div class="line-content">
+                <input type="checkbox" name="usoDeImagem" id="usoDeImagem">
+                <label for="usoDeImagem" required>Cedo meus direitos de uso de imagem</label>
+            </div>
+            <div class="line-content">
+               <button type="submit" id ='botaoEnviar'>Enviar</button>
+                <button id="botaoApagar">Apagar</button>
+            </div>
+            </form>
+        </section></center>
+    </main>
+    <script src="form.js"></script>
+</body>
+</html>

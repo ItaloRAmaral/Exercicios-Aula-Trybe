@@ -1,0 +1,19 @@
+#caixa-formulario {
+    background-color: #A4A2A5;
+    border: 2px solid black;
+    padding: 1.5%;
+    width: 60%;
+    text-align: left;
+}
+
+.line-content {
+    margin-top: 1%;
+}
+
+#destino {
+    margin-top: 2%;
+}
+
+#justify {
+    resize: none;
+}
