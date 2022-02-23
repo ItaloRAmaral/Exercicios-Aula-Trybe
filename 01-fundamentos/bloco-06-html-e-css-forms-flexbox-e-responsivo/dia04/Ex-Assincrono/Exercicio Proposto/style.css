@@ -29,6 +29,7 @@ body {
     flex-basis: 500px;
     border: 1px solid blue;
     order: 2;
+    flex-grow: 1;
 }
 
 .menu-container ul {
