@@ -62,6 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: 700px;
+    flex-grow: 10;
 
 }
 
