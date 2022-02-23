@@ -87,6 +87,7 @@ body {
     height: 150px;
     justify-content: center;
     margin: 10px;
+    flex-grow: 1;
 }
 
 .card-movies {
