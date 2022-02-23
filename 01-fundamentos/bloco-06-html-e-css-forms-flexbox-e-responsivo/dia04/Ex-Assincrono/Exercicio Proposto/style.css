@@ -58,7 +58,7 @@ body {
 }
 
 .movie-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     flex-basis: 700px;
@@ -72,7 +72,7 @@ body {
 }
 
 .card-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -92,11 +92,11 @@ body {
 
 .card-movies {
     display: flex;
-    border: 2px solid aqua;
+    /* border: 2px solid aqua; */
     flex-basis: 16%;
 }
 .aside-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin: 20px;
