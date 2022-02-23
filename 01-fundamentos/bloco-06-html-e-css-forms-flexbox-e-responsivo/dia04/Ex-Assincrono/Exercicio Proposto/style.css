@@ -14,14 +14,14 @@ body {
 .header-container {
     background-color: #5C687C;
     display: flex;
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
     flex-basis: 268px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     order: 1;
 
 }
@@ -29,7 +29,7 @@ body {
 .menu-container {
     display: flex;
     flex-basis: 500px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     order: 2;
     flex-grow: 1;
     align-self: center;
@@ -39,7 +39,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .menu-container li {
@@ -76,7 +76,7 @@ body {
 .card-container div {
     align-items: center;
     background-color: #5C687C;
-    border: black solid 1px;
+    /* border: black solid 1px; */
     display: flex;
     height: 150px;
     justify-content: center;
@@ -84,10 +84,13 @@ body {
 }
 
 .aside-container {
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin: 20px;
     flex-basis: 350px;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .aside-container h3,
