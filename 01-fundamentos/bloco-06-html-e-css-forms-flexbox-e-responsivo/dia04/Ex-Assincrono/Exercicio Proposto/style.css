@@ -30,6 +30,7 @@ body {
     border: 1px solid blue;
     order: 2;
     flex-grow: 1;
+    align-self: center;
 }
 
 .menu-container ul {
