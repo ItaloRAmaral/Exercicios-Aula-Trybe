@@ -12,21 +12,30 @@ body {
 .header-container {
     background-color: #5C687C;
     display: flex;
+    border: 5px solid black;
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
+    flex-basis: 268px;
+    border: 1px solid red;
+    order: 1;
+
 }
 
 .menu-container {
     display: flex;
+    flex-basis: 500px;
+    border: 1px solid blue;
+    order: 2;
 }
 
 .menu-container ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    border: 1px solid purple;
 }
 
 .menu-container li {
