@@ -39,4 +39,20 @@ const valueList = (obj) => Object.values(obj);
 
 const allLessons = Object.assign ({}, {lesson1, lesson2, lesson3});
 
-console.log(allLessons);
+/// Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+const nrEstudantes = (obj) => {
+    let total = 0;
+    const array = Object.keys(obj);
+    for (let i in array){
+        total += obj[array[i]].numeroEstudantes;
+        // console.log(obj[array[i]].numeroEstudantes);
+    }
+    return total;
+}
+
+nrEstudantes (allLessons);
+
+/// Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+const getValueByNumber = (obj, index) => Object.values(obj)[index];
+
+/// Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. 
