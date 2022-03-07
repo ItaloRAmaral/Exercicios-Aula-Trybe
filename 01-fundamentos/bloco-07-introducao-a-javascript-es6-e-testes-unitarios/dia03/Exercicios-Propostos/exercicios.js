@@ -28,5 +28,5 @@ function myFizzBuzz(num) {
 }
 
 
-console.log(myRemove([1, 2, 3, 4], 5))
+console.log(myFizzBuzz('2'));
 module.exports = {sum, myRemove, myFizzBuzz};

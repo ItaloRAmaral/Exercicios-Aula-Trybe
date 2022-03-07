@@ -47,5 +47,29 @@ describe('Função myRemove', () => {
 */
 
 describe('Função myFizzBuzz', () =>{
-    it('')
+    it('Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado', ()=>{
+        expect(myFizzBuzz(15)).toBe('fizzbuzz');
+    });
+    it('Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado', ()=>{
+        expect(myFizzBuzz(27)).toBe('fizz');
+    });
+    it('Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado', ()=>{
+        expect(myFizzBuzz(50)).toBe('buzz');
+    });
+    it('Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado', ()=>{
+        expect(myFizzBuzz(8)).toBe(8)
+    });
+    it('Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
+        expect(myFizzBuzz('2')).toBe(false);
+    })
 })
+
+/*
+4 -> Para as funções encode e decode crie os seguintes testes em Jest:
+    Teste se encode e decode são funções;
+    .   Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, .   2, 3, 4 e 5, respectivamente;
+    .   Para a função decode teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente;
+    .   Teste se as demais letras / números não são convertidos para cada caso;
+    .   Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.
+*/
+
