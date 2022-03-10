@@ -60,10 +60,11 @@ const books = [{
     },
 ];
 
-// 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+// 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
 
-function authorBornIn1947() {
-    return books.find((element) => element.author.birthYear === 1947).author.name;
+function getNamedBook() {
+    
+    return books.find((element) => element.name.length === 26);
 }
 
-console.log(authorBornIn1947());
+console.log(getNamedBook(books))
