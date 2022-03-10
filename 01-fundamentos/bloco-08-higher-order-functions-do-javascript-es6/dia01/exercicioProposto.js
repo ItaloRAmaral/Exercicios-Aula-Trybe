@@ -31,7 +31,6 @@ const verificaNumero = (myNumber, number) => {
 
 const sorteiaNumeros = (myNumber, e) => {
     const numeroSorteado = Math.floor((Math.random() * 5) + 1);
-    console.log(numeroSorteado);
 
     return e(myNumber, numeroSorteado) ? 'Parabens, você ganhou' : 'Tente Novamente';
 }
