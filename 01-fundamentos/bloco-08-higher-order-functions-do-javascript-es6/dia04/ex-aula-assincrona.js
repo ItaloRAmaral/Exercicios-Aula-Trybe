@@ -141,7 +141,7 @@ const estudantes = [{
 // Agora crie uma função usando os dados dos estudantes que usamos no conteúdo do dia anterior, para mostrar na tela um relatório que diz em qual matéria o estudante foi melhor. Você usará tanto o map quanto, dentro dele, o reduce !
 
 const getBestSubj = (acc, element) => {
-    if (acc > element) return acc;
+    if (acc.nota > element.nota) return acc;
     return element;
 };
 
