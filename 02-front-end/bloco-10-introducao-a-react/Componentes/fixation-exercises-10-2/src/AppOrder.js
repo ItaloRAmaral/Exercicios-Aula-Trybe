@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Order from './Components/Order';
 
-class App extends React.Component {
+class AppOrder extends React.Component {
   render() {
     const shoppingCart = [{
       id: 102,
@@ -39,4 +39,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default AppOrder;
