@@ -1,17 +1,23 @@
 import React from 'react';
+import Nome from './Nome'
 
 class Forms extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      nome: "",
+      name: "",
+      email: "",
+      estado: "",
     };
   }
 
-  getInputValue = (e) => {
+  getInputValue = ({target}) => {
+    const {name} = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+
     this.setState({
-        nome: e.target.value,
+        [name]: value,
     })
   }
 
@@ -20,22 +26,25 @@ class Forms extends React.Component {
       <section>
         <h1>Meu Formulario</h1>
         <form>
-          <label>
-            Seu Nome:
-            <input type="text" value={this.state.name} onChange={this.getInputValue}></input>
-          </label>
+          <Nome value={this.state.name} onChange={this.getInputValue}/>
           <label>
             Seu Email:
-            <input type="email"/>
+            <input type="email"
+            name="email"
+            value={this.state.email}
+            onChange={this.getInputValue} />
           </label>
           <label>
             Seu Estado:
-            <select>
-              <option value="">SP</option>
-              <option value="">RJ</option>
-              <option value="">SC</option>
-              <option value="">RS</option>
-              <option value="">MG</option>
+            <select 
+            name="estado"
+            value={this.state.estado}
+            onChange={this.getInputValue}>
+              <option>SP</option>
+              <option>RJ</option>
+              <option>SC</option>
+              <option>RS</option>
+              <option>MG</option>
             </select>
           </label>
         </form>
