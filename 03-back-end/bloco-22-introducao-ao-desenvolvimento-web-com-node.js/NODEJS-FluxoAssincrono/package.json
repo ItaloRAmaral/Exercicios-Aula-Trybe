@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-fluxoassincrono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simpsons.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node simpsons.js"
+  },
+  "author": "Italo Amaral",
+  "license": "ISC"
+}
